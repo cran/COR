@@ -1,0 +1,8 @@
+#’ @importFrom np b.star
+
+importFrom("stats", "median", "qt")
+export(COR)
+export(MSEcom)
+export(MSEver)
+export(beta_AD)
+export(beta_cor)

@@ -1,0 +1,17 @@
+debc4b8daab7decf2ab4e75e9dc9df2d *DESCRIPTION
+bb428ee90becd397d311a1fef7eb2d49 *LICENSE
+26ce7bf41343032079a678d98deb83cf *NAMESPACE
+ced5b5e30f08a9343bca6d38bf64fb50 *R/COR.R
+ac63f9d06df0e6711e9d051fe2e0e280 *R/MSEcom.R
+12e1de03d9de084ae8b2abd8f23aaf12 *R/MSEver.R
+7b0c5ab6aa7a1242b655358a099df9c6 *R/beta_AD.R
+f3fd53cc171ab58ccfc1076748684bdc *R/beta_cor.R
+eb5d65bd855a2b8aa41084afc66ad511 *data/communities.rda
+9fc7d837c614e0aaeef858f546f3a159 *data/ethylene_CO.rda
+7743aab39cde4d17dfc7cafc7fe4dd55 *man/COR.Rd
+ebbdca39e12dc547871cb83e577bd6cd *man/MSEcom.Rd
+67c167622992ed7ba80560a50498b749 *man/MSEver.Rd
+1755e562016371a1c40ad340d813f5fc *man/beta_AD.Rd
+59f4883dca58b892656e910cb332fbad *man/beta_cor.Rd
+8bc78611ee388652ab8cc2d87d6fe537 *man/communities.Rd
+344e6a88faacfd28cff4cc5d6d424617 *man/ethylene_CO.Rd
