@@ -18,15 +18,19 @@ MSEver(K = K, nk = nk, alpha = alpha, X = X, y = y)
 \item{y}{is the response vector}
 }
 \value{
-minE,Mcor,Mx,MA
+A list containing:
+\item{minE}{The minimum value of the error variance estimator.}
+\item{Mcor}{The MSE of the COR estimator.}
+\item{Mx}{The MSE of the estimator based on the subset with the maximum M.}
+\item{MA}{The MSE of the estimator based on the subset with the minimum W.}
 }
 \description{
 Caculate the MSE values of the COR criterion for redundant data in simulation
 }
 \examples{
- p=6;n=1000;K=2;nk=200;alpha=0.05;sigma=1
- e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1)))); 
- data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
- y=X\%*\%beta+e;
- MSEver(K=K,nk=nk,alpha=alpha,X=X,y=y)
+p=6;n=1000;K=2;nk=200;alpha=0.05;sigma=1
+e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1))));
+data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
+y=X\%*\%beta+e;
+MSEver(K=K,nk=nk,alpha=alpha,X=X,y=y)
 }

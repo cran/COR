@@ -18,15 +18,18 @@ COR(K = K, nk = nk, alpha = alpha, X = X, y = y)
 \item{y}{is the response vector}
 }
 \value{
-seqL, seqN,lWMN
+A list containing:
+\item{seqL}{The index of the subset with the minimum L value.}
+\item{seqN}{The index of the subset with the minimum N value.}
+\item{lWMN}{The optimal subset lengths on the COR.}
 }
 \description{
 Caculate the optimal subset lengths on the COR
 }
 \examples{
- p=6;n=1000;K=2;nk=200;alpha=0.05;sigma=1
- e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1)))); 
- data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
- y=X\%*\%beta+e;
- COR(K=K,nk=nk,alpha=alpha,X=X,y=y)
+p=6;n=1000;K=2;nk=200;alpha=0.05;sigma=1
+e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1))));
+data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
+y=X\%*\%beta+e;
+COR(K=K,nk=nk,alpha=alpha,X=X,y=y)
 }

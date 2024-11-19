@@ -18,15 +18,20 @@ MSEcom(K = K, nk = nk, alpha = alpha, X = X, y = y)
 \item{y}{is the response vector}
 }
 \value{
-MSEx,MSEA,MSEc,MSEm,MSEa
+A list containing:
+\item{MSEx}{The Mean Squared Error between the true beta and the estimate betax based on the COR.}
+\item{MSEA}{The Mean Squared Error between the true beta and the estimate betaA based on the least squares estimate for subset A.}
+\item{MSEc}{The Mean Squared Error between the true beta and the estimate betac based on the COR-selected subset.}
+\item{MSEm}{The Mean Squared Error between the true beta and the median estimator betamm across all subsets.}
+\item{MSEa}{The Mean Squared Error between the true beta and the mean estimator betaa across all subsets.}
 }
 \description{
 Caculate the MSE values of the COR criterion in simulation
 }
 \examples{
- p=6;n=1000;K=2;nk=500;alpha=0.05;sigma=1
- e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1)))); 
- data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
- y=X\%*\%beta+e;
- MSEcom(K=K,nk=nk,alpha=alpha,X=X,y=y)
+p=6;n=1000;K=2;nk=500;alpha=0.05;sigma=1
+e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1))));
+data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
+y=X\%*\%beta+e;
+MSEcom(K=K,nk=nk,alpha=alpha,X=X,y=y)
 }
