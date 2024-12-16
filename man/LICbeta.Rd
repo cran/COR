@@ -24,3 +24,6 @@ A list containing:
 \description{
 This function estimates the coefficients of a linear regression model using a design matrix `X` and a response vector `Y`. It implements an A-optimal and D-optimal design criteria to choose optimal subsets of observations.
 }
+\references{
+Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
+}

@@ -27,3 +27,6 @@ A list containing:
 \description{
 Calculate MSE values for different beta estimation methods
 }
+\references{
+Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
+}

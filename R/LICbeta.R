@@ -11,6 +11,8 @@
 #' @return A list containing:
 #' \item{E5}{The LIC estimator for linear regression.}
 #' @export
+#' @references
+#' Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
 #' @importFrom stats qt
 LICbeta=function (X, Y, alpha, K, nk)
 {

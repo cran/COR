@@ -16,6 +16,8 @@
 #' \item{MSEW}{The Mean Squared Error (MSE) of the weighted estimator (Wbeta) compared to the true beta.}
 #' \item{MSEw}{The Mean Squared Error (MSE) of the weighted estimator (wbeta) compared to the true beta.}
 #' @export
+#' @references
+#' Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
 #' @importFrom stats var
 beta_LW=function(X,Y,K,nk){
   Y=Y;n=nrow(X);p=ncol(X)

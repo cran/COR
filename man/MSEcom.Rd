@@ -35,3 +35,6 @@ data=c(rnorm(n*p,5,10));X=matrix(data, ncol=p);
 y=X\%*\%beta+e;
 MSEcom(K=K,nk=nk,alpha=alpha,X=X,y=y)
 }
+\references{
+Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
+}

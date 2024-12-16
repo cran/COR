@@ -11,6 +11,8 @@
 #' \item{seqN}{The index of the subset with the minimum N value.}
 #' \item{lWMN}{The optimal subset lengths on the COR.}
 #' @export
+#' @references
+#' Guo, G., Song, H. & Zhu, L. The COR criterion for optimal subset selection in distributed estimation. \emph{Statistics and Computing}, 34, 163 (2024). \doi{10.1007/s11222-024-10471-z}
 #' @examples
 #' p=6;n=1000;K=2;nk=200;alpha=0.05;sigma=1
 #' e=rnorm(n,0,sigma); beta=c(sort(c(runif(p,0,1))));
